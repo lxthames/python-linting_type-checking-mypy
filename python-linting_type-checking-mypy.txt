@@ -1,0 +1,29 @@
+#Install Flake8 and MyPy:
+
+pip install flake8 mypy
+
+#Create a .flake8 configuration file in the root of your project with the following content-
+
+[flake8]
+ignore = E203,W503
+exclude = .git,__pycache__,venv
+max-line-length = 88
+
+#This configuration file tells Flake8 to ignore certain error codes (E203 and W503), exclude specific directories (.git, __pycache__, and venv), and enforce a maximum line length of 88 characters.
+
+#This configuration file tells Flake8 to ignore certain error codes (E203 and W503), exclude specific directories (.git, __pycache__, and venv), and enforce a maximum line length of 88 characters.
+
+[mypy]
+plugins = pydantic.mypy
+ignore_missing_imports = True
+strict_optional = True
+warn_unused_configs = True
+
+
+#Run Flake8 to perform linting on your Python code
+
+#mypy .
+
+#This command will analyze your Python code and check for type errors, using the configuration specified in the mypy.ini file
+
+
