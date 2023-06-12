@@ -24,6 +24,6 @@ warn_unused_configs = True
 
 #mypy .
 
-#This command will analyze your Python code and check for type errors, using the configuration specified in the mypy.ini file
+#This command will analyze Python code and check for type errors, using the configuration specified in the mypy.ini file
 
 
